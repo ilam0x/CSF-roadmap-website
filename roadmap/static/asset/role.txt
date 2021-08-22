@@ -1,0 +1,15 @@
+Senior management
+
+-	Board of directors: to supervise and set finance and cyber security strategy priorities
+
+-	Board committees: cyber security strategy, audit and compliance, risk management
+
+-	CEO: oversee the cyber security program, policy confirmation, compliance enforcement, report compliance issues to the board
+
+-	CIO & CISO: implementing the cyber security program, make recommendations to the CEO on strategic security plans, collaborate with business leaders to creating policies, procedures and setting communications. Plan the budget plan.
+
+-	Specific data owner: audit and review the corresponding procedures, and relevant staff training.
+
+Employees
+Employees are a huge internal threat to the information security, so employees need to understand their operation role and responsibility so that they can conduct in a compliance way. In the information policy, specific role and responsibility needs to be clarified, the responsibilities needs to align with the ownership of data assets (ISO/IEC, 2013) besides, to get education is also part of responsibility for employees and the training details would be introduced in the security culture and knowledge management section
+

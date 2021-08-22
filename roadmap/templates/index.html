@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/html-canvas.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+  <title>roadmap</title>
+</head>
+
+<body>
+  <div class="app">
+  <!--    strategy process -->
+    <section class="root row">
+      <div class="node short info">
+        <span>Strategy</span>
+      </div>
+      <span class="line"></span>
+      <div class="node short info">
+        <span>Determin security management program vision and objectives</span>
+      </div>
+      <span class="line"></span>
+      <div class="node short">
+        <span class="href" href="{% static 'asset/pestle.png'%}">Analyse internal and external environment regarding security management</span>
+      </div>
+      <span class="line"></span>
+      <div class="node short">
+        <span><a href="{% static 'asset/risk metrics.xlsx' %}" style="color: #409EFF" >Conduct risk assessment and create risk metrics</a></span>
+      </div>
+      <span class="line"></span>
+      <div class="node short">
+        <span>Define improvement objective and priorities</span>
+      </div>
+      <span class="line"></span>
+      <div class="node short">
+        <div class="node-top">
+          <div class="node short">
+            <span>Define baseline regarding business operation and relevant technologies</span>
+          </div>
+
+          <span class="line line-top"></span>
+        </div>
+        <span>Make strategies for management and operation</span>
+      </div>
+      <span class="line"></span>
+      <div class="node short">
+        <span>Monitor, review and evaluate current strategy</span>
+      </div>
+      <span class="line line-special"></span>
+    </section>
+
+   <!-- row for identifying NIST section and priorities selection-->
+    <section class="row" style="justify-content: space-between; position: relative;">
+      <span class="line line-special line-lang-vertical"></span>
+      <span class="line line-special line-lang"></span>
+
+      <section class="col btn-nav">
+      	<button class="info">Identify</button>
+        <button class="brand">Protect</button>
+        <button class="success">Detect</button>
+        <button class="warning">Response</button>
+        <button class="danger">Recover</button>
+      </section>
+
+      <section class="col">
+        <section class="row sub-wrap ">
+          <div class="label lang">
+            <span>- Priority</span>
+          </div>
+          <div class="node lang">
+            <span>Build a healthy security culture and governance model</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang">
+            <span>Manage risk in the language of the business</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang">
+            <span>Establish a control baseline</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang">
+            <span>Simplify and rationalize IT and security</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang">
+            <span>Govern and control access without creating a drag on the business</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang">
+            <span>Institute cyber-resilience, detection, response, and recovery</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- row for all the following steps -->
+    <section class="row second" style="max-width: 100vh;">
+
+      <!-- main steps -->
+      <section class="col" style="margin-right: calc(1rem + 10px);">
+        <div class="node short" style="margin-top: calc(1rem + 10px);">
+          <div class="node-top">
+            <span class="line line-bottom"></span>
+          </div>
+          <span>Management</span>
+          <div class="node-right">
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="node short" style="margin-top: 910px;">
+          <div class="node-top" style="height: auto;">
+            <span class="line line-bottom" style="height: 900px;"></span>
+          </div>
+          <span>Operation</span>
+          <div class="node-right">
+            <span class="line line-special" style="width: .5rem;"></span>
+          </div>
+        </div>
+        <div class="node short" style="margin-top: calc(4rem + 10px);">
+          <div class="node-top" style="height: auto;">
+            <span class="line line-bottom" style="height: 5rem;"></span>
+          </div>
+          <span>Improvement</span>
+          <div class="node-right">
+            <span class="line line-special" style="width: .5rem;"></span>
+          </div>
+        </div>
+        <div class="node short" style="margin-top: 110px;">
+          <div class="node-top" style="height: auto;">
+            <span class="line line-bottom" style="height: 100px;"></span>
+          </div>
+          <span>Certificates</span>
+          <div class="node-right">
+            <span class="line line-special" style="width: .5rem;"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- first column of detailed steps  -->
+      <section class="col" style="margin-top: calc(.8rem);">
+        <!-- steps for management -->
+        <div class="node lang">
+          <span class="href" href="{% static 'asset/role.txt'%}">Security role and responsibility</span>
+        </div>
+        <div class="node lang" style="margin-top: calc(1rem + 10px);">
+          <div class="node-top">
+            <span class="line line-bottom"></span>
+          </div>
+          <span class="href" href="{% static 'asset/policy.png'%}">Create and maintain essential policies, standards, baseline, guidelines, and
+            procedures aligned with standardized framework</span>
+        </div>
+        <div class="node lang" style="margin-top: calc(.3rem + 10px);">
+          <div class="node-top">
+            <span class="line line-bottom" style="height: .3rem;"></span>
+          </div>
+          <span>Legal and compliance</span>
+        </div>
+        <div class="node lang brand" style="margin-top: calc(.3rem + 10px);">
+          <div class="node-top">
+            <span class="line line-bottom" style="height: .3rem;"></span>
+          </div>
+          <span class="href" href="{% static 'asset/training.png'%}">Security culture and knowledge management</span>
+        </div>
+
+        <!-- support management and detailed steps -->
+        <div class="row" style="margin-top: 3rem;">
+          <div class="node lang brand">
+            <div class="node-top" style="height: auto;">
+              <span class="line line-bottom" style="height: 368px;"></span>
+            </div>
+            <span>Support management</span>
+            <div class="node-right">
+              <span class="line line-special" style="width: .3rem;"></span>
+            </div>
+          </div>
+
+          <div class="row sub-wrap" style="position: relative; margin-left: 1rem; ">
+            <div class="node lang arrow brand">
+              <span>Budget Review</span>            
+            </div>
+            <div class="node lang arrow brand">
+              <span>Document management</span>              
+            </div>
+            <div class="node lang arrow brand">
+              <span>Communication management</span>
+            </div>
+            <span class="line-lang-vertical-arrow"></span>
+          </div>
+        </div>
+
+        <!-- operation steps -->
+        <section class="row sub-wrap"
+          style="margin-top: 30px; position: relative; padding-right: 20px; align-items: flex-start;">
+          <div class="node lang arrow brand ">
+            <span class="href" href="{% static 'asset/asset.png'%}">Asset management</span>
+          </div>
+          <div class="node lang arrow brand ">
+            <span class="href" href="{% static 'asset/risk.png'%}">Risk management</span>
+          </div>
+          <!-- technical operations and detailed steps-->
+          <div class="row">
+            <div class="node lang arrow success">
+              <span>Technical operation</span>
+              
+              <div class="node-right">
+                <span class="line line-special" style="width: .3rem;"></span>
+              </div>
+            </div>
+            <div class="row sub-wrap" style="position: relative; margin-left: 1rem; ">
+              <div class="node lang arrow success">
+                <span>Configuration managemnet </span>
+               
+              </div>
+              <div class="node lang arrow success">
+                <span>Network security control</span>
+                
+              </div>
+              <div class="node lang arrow success">
+                <span>Firewall management</span>
+                
+              </div>
+              <div class="node lang arrow success">
+                <span>Malware management</span>
+                
+              </div>
+              <div class="node lang arrow success">
+                <span>Patch management</span>
+                
+              </div>
+              <span class="line-lang-vertical-arrow"></span>
+            </div>
+          </div>
+          <div class="node lang arrow warning">
+            <span>Incident response management</span>
+           
+          </div>
+          <span class="line-lang-vertical-arrow"></span>
+        </section>
+
+        <!-- section for improvement -->
+        <section class="row sub-wrap"
+          style="margin-top: 30px; position: relative; padding-right: 20px; align-items: flex-start;">
+          <div class="node lang arrow warning">
+            <span>Review & audit</span>
+          </div>
+          <div class="node lang arrow brand warning">
+            <span>Continual improvement plan</span>
+          </div>
+          <span class="line-lang-vertical-arrow"></span>
+        </section>
+
+        <!-- section for certificates -->
+        <section class="row sub-wrap add-input add-input-1"
+          style="margin-top: 30px; position: relative; padding-right: 20px; align-items: flex-start;">
+          <div class="row sub-wrap ">
+            <div class="node lang arrow brand">
+              <a class="href" href="https://www.gov.uk/government/publications/cyber-essentials-scheme-overview" style=" width: 100%; text-align: center;">Cyber essential or cyber essential plus</a>
+              <input type="checkbox" name="" id="" />
+            </div>
+            <div class="node lang arrow brand">
+              <span class="href" href="https://iso27001security.com/">ISO27001</span>
+              <input type="checkbox" name="" id="" />
+            </div>
+            <div class="node lang" style="border: none; padding: 0;">
+              <input type="text" class="input-1" style="flex-shrink: 1; flex: 1; height: 30px;">
+              <button style="flex-shrink: 0; height: 30px;" onclick="app.methods.addInput(1)">add</button>
+            </div>
+          </div>
+          <span class="line-lang-vertical-arrow"></span>
+        </section>
+      </section>
+      <!-- policy section -->
+      <section class="col" style="margin-top: calc(1rem); margin-left: -540px;">
+        <section class="row sub-wrap " style="padding-left: 1rem;">
+          <div class="label lang">
+            <span>- Organisational policy</span>
+          </div>
+          <div class="node lang">
+            <span class="href" href="{% static 'asset/strategy.png'%}">• Strategy policy</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang">
+            <span>information security policy</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+        </section>
+        <section class="row sub-wrap " style="padding-left: 1rem;">
+          <div class="label lang">
+            <span>- Issue-specific policy</span>
+          </div>
+          <div class="node lang brand">
+            <span>• Physical & Environmental Security Policy</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang brand">
+            <span>• Acceptable Use Policy</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang brand">
+            <span>• Email & Digital Communication Policy</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang brand">
+            <span>• Access Control Policy</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang warning">
+            <span>• Incident Management Policy</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <div class="node lang danger">
+            <span>• Disaster Recovery Plan</span>
+            <input type="checkbox" name="" id="" />
+          </div>
+        </section>
+      </section>
+      <section class="row sub-wrap add-input add-input-2" style=" margin-top: calc(1rem); margin-left: -60px; padding: 0;">
+        <div class="label lang">
+          <span>- system-specific policy</span>
+        </div>
+        <div class="node lang" style="border: none; padding: 0;">
+          <input type="text" class="input-2" style="flex-shrink: 1; flex: 1; height: 30px;">
+          <button style="flex-shrink: 0; height: 30px;" onclick="app.methods.addInput(2)">add</button>
+        </div>
+      </section>
+    </section>
+  </section>
+
+
+    <section class="btn">
+      <button onclick="app.methods.selectAll()">select all</button>
+      <button onclick="app.methods.default()">default</button>
+      <button onclick="app.methods.apply()">apply</button>
+      <button onclick="app.methods.saveAsPdf()">save as pdf</button>
+    </section>
+    <div class="dialog-wrapper">
+      <div class="dialog">
+        <div class="dialog-header">
+          <div class="dialog-title"></div>
+          <button class="dialog-close" onclick="app.methods.closed()">×</button>
+        </div>
+        <div class="dialog-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
