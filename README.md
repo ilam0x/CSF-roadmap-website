@@ -1,5 +1,6 @@
 # CSF-roadmap-website
 A Simple Django website is designed to present a general guidance of enforceable cybersecurity governance processes for SMEs.
--	used language: HTML, CSS3, Javascript, Jquery
--	allow user to customize their own roadmap
+- current functions:
+-	allow user to customize partial roadmaps
 -	save the result as PDF with rendered CSS style.
+-	roadmap structure draft https://www.processon.com/view/link/6105d0951efad43466a2b3e6
